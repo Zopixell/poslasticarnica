@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { GiCupcake, GiStairsCake } from 'react-icons/gi';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
-
+import './gallery/Gallery';
+import './ContactUs';
 
 
 function Navbar() {
@@ -21,6 +22,9 @@ function Navbar() {
             setButton(true);
         }
     };
+    useEffect(() =>{
+        showButton();
+    },[]);
 
     window.addEventListener('resize', showButton);
 
@@ -28,7 +32,7 @@ function Navbar() {
         <>
          <div className='navbar'>
             <div className='navbar-container container'>
-                <Link to= '/' className="navbar-logo">
+                <Link to= '/' className='navbar-logo' onClick={closeMobileMenu}>
                     <GiCupcake className='navbar-icon'/>
                     Zopixell
                 </Link> 
@@ -37,27 +41,27 @@ function Navbar() {
             </div>
                 <ul className={click ? 'nav-menu active': 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link to= '/' className='nav-links'>
+                        <Link to= '/' className='nav-links' onClick={closeMobileMenu}>
                             Home
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to= '/menu' className='nav-links'>
+                        <Link to= '/menu' className='nav-links' onClick={closeMobileMenu}>
                             Meni
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to= '/gallery' className='nav-links'>
+                        <Link to= '/gallery' className='nav-links'onClick={closeMobileMenu}>
                             Galerija
                         </Link>
                     </li>
                     <li className='nav-btn'>
                         {button ? (
-                            <Link to='/contact-us' className='btn-link'>
+                            <Link to='/Contactus' className='btn-link' >
                                 <Button buttonStyle='btn--outline'>Piši nam</Button>
                             </Link>
                         ): (
-                            <Link to='/contact-us' className='btn-link'>
+                            <Link to='/ContactUs' className='btn-link' onClick={closeMobileMenu}>
                                 <Button buttonStyle='btn--outline'>Piši nam</Button>
                             </Link>
                         )}
