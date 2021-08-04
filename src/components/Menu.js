@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tabela } from './Tabela'
+//import { Tabela } from './Tabela'
 import './Menu.css' 
 import * as ReactBootStrap from 'react-bootstrap';
 const Menu = ()=>{
