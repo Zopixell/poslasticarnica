@@ -1,0 +1,20 @@
+table, th, td {
+    border: 1px solid black;
+  }
+  thead{
+    height: 70px;
+    background-color:rgb(250, 166, 181);
+  }
+  
+  table {
+    margin: 65px 0px;
+    width: 100%;
+    border-collapse: collapse;
+    text-align:center ;
+  }
+ 
+ 
+  tbody{
+      height: 500px;
+      color: rgb(235, 66, 97);
+  }

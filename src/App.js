@@ -7,6 +7,7 @@ import Menu from './components/Menu';
 import Gallery from './components/gallery/Gallery';
 import ContactUs from './components/ContactUs';
 import Footer from './components/pages/Footer';
+import { Tabela } from './components/Tabela';
 
 //<Route path = '/ContactUs' component = {ContactUs}/>
 

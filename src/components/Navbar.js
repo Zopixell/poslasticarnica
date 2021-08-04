@@ -42,12 +42,12 @@ function Navbar() {
                 <ul className={click ? 'nav-menu active': 'nav-menu'}>
                     <li className='nav-item'>
                         <Link to= '/' className='nav-links' onClick={closeMobileMenu}>
-                            Home
+                            Početna
                         </Link>
                     </li>
                     <li className='nav-item'>
                         <Link to= '/menu' className='nav-links' onClick={closeMobileMenu}>
-                            Meni
+                            Cenovnik
                         </Link>
                     </li>
                     <li className='nav-item'>
